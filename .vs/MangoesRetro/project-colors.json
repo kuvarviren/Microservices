@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a818f524-87d7-4a06-9804-69576185afba": {
+      "ProjectGuid": "a818f524-87d7-4a06-9804-69576185afba",
+      "DisplayName": "Mango.Services.ProductAPI",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "0a58580c-766d-4c0c-a56a-3978e73546c6": {
+      "ProjectGuid": "0a58580c-766d-4c0c-a56a-3978e73546c6",
+      "DisplayName": "Mango.Web",
+      "ColorIndex": 1
+    },
+    "c91d4762-cba3-48df-870a-87312adf2eef": {
+      "ProjectGuid": "c91d4762-cba3-48df-870a-87312adf2eef",
+      "DisplayName": "Mango.Web",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
