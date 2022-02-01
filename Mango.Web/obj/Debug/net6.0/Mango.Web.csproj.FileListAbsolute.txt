@@ -7,7 +7,6 @@ D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Mango.Web.runtimeconfig.json
 D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Mango.Web.dll
 D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\ref\Mango.Web.dll
 D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Mango.Web.pdb
-D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.csproj.AssemblyReference.cache
 D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.GeneratedMSBuildEditorConfig.editorconfig
 D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.AssemblyInfoInputs.cache
 D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.AssemblyInfo.cs
@@ -26,3 +25,12 @@ D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.pdb
 D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.genruntimeconfig.cache
 D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.csproj.CopyComplete
+D:\Personal\MangoesRetro\Mango.Web\obj\Debug\net6.0\Mango.Web.csproj.AssemblyReference.cache
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Personal\MangoesRetro\Mango.Web\bin\Debug\net6.0\System.Security.Permissions.dll

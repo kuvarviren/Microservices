@@ -70,3 +70,4 @@ D:\Personal\MangoesRetro\Mango.Services.ProductAPI\bin\Debug\net6.0\Newtonsoft.J
 D:\Personal\MangoesRetro\Mango.Services.ProductAPI\bin\Debug\net6.0\Mango.Web.dll
 D:\Personal\MangoesRetro\Mango.Services.ProductAPI\bin\Debug\net6.0\Mango.Web.pdb
 D:\Personal\MangoesRetro\Mango.Services.ProductAPI\obj\Debug\net6.0\Mango.Services.ProductAPI.csproj.AssemblyReference.cache
+D:\Personal\MangoesRetro\Mango.Services.ProductAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll

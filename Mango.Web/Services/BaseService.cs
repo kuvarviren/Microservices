@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Net.Http.Headers;
+using System.Text;
 using Mango.Web.Dtos;
 using Mango.Web.Models;
 using Newtonsoft.Json;
@@ -28,6 +29,11 @@ namespace Mango.Web.Services
                 if (apiRequest.Data != null)
                 {
                     requestMsg.Content = new StringContent(JsonConvert.SerializeObject(apiRequest.Data), Encoding.UTF8, "application/json");
+                }
+
+                if(!string.IsNullOrEmpty(apiRequest.AccessToken))
+                {
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",apiRequest.AccessToken);
                 }
 
                 HttpResponseMessage responseMsg = null;
