@@ -30,11 +30,11 @@ var build = builder.Services.AddIdentityServer(options =>
             .AddInMemoryClients(SD.Clients)
             .AddAspNetIdentity<ApplicationUser>();
 
-build.AddDeveloperSigningCredential();
-
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
 builder.Services.AddScoped<IProfileService, ProfileService>();
+build.AddDeveloperSigningCredential();
+
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

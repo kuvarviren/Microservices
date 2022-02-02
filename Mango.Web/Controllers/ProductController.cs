@@ -81,8 +81,8 @@ namespace Mango.Services.ProductAPI.Controllers
             return NotFound();
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> ProductDelete(ProductDto model)
         {
             var accessToken = await HttpContext.GetTokenAsync("access_token");
