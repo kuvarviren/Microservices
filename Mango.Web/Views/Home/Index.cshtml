@@ -1,4 +1,5 @@
 ﻿@using Mango.Web.Models.Dtos
+@using System.Globalization
 @model IEnumerable<ProductDto>
     <form>
         <div class="container row">
@@ -15,7 +16,7 @@
                                 <p class="card-text">@Html.Raw(product.Description)</p>
                                 <div class="row">
                                     <div class="col pt-1">
-                                        <span style="font-size:23px;">@string.Format("{0:c}", product.Price)</span>
+                                        <span style="font-size:23px;">@product.Price.ToString("C", CultureInfo.CreateSpecificCulture("en-US")))</span>
                                     </div>
                                     <div class="col">
                                         <a asp-action="Details" asp-route-productId="@product.Id"
