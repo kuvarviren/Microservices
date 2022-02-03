@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 using System.Text;
-using Mango.Web.Dtos;
+using Mango.Web.Models.Dtos;
 using Mango.Web.Models;
 using Newtonsoft.Json;
 

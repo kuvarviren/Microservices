@@ -33,6 +33,7 @@ var build = builder.Services.AddIdentityServer(options =>
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
 builder.Services.AddScoped<IProfileService, ProfileService>();
+
 build.AddDeveloperSigningCredential();
 
 

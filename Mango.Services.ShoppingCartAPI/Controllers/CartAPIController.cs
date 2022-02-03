@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Mango.Services.ShoppingCartAPI.Controllers
 {
     [ApiController]
-    [Route("api/cart")]
+    [Route("api/carts")]
     public class CartAPIController : Controller
     {
         private readonly ICartRepository _cartRepository;
