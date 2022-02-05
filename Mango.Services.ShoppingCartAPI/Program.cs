@@ -23,7 +23,15 @@ builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //Add Cart Repo Service
 builder.Services.AddScoped<ICartRepository, CartRepository>();
+//Add coupon repository
+builder.Services.AddScoped<ICouponRepository, CouponRespository>();
+
 builder.Services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
+
+//Add coupon repository for synchronous communication b/w cart and coupon microservice
+builder.Services.AddHttpClient<ICouponRepository, CouponRespository>(u => u.BaseAddress
+
+= new Uri(builder.Configuration["ServiceUrls:CouponAPI"]));
 
 //configure authenticatin, authorization and swagger services for Identity token
 
