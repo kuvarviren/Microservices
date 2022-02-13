@@ -1,4 +1,5 @@
 using AutoMapper;
+using Mango.MessageBus;
 using Mango.Services.OrderAPI;
 using Mango.Services.OrderAPI.DbContexts;
 using Mango.Services.OrderAPI.Messaging;
@@ -23,6 +24,9 @@ using Microsoft.OpenApi.Models;
     builder.Services.AddSingleton(new OrderRepository(optionBuilder.Options));
     builder.Services.AddSingleton<IAzureServiceBusConsumer, AzureServiceBusConsumer>();
     builder.Services.AddControllers();
+
+    //configure services to post message to message bus
+    builder.Services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
 
     //configure authentication, authorization and swagger services for Identity token
 

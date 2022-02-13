@@ -139,6 +139,9 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
                 checkoutHeaderDto.CartDetails = cartDetails;
                 //logic to add message to process order
                 await _messageBus.PublishMessage(checkoutHeaderDto, "checkoutmessagetopic");
+
+                //clear the cart
+                await _cartRepository.ClearCart(checkoutHeaderDto.UserId);
             }
             catch (Exception ex)
             {

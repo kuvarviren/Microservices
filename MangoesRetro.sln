@@ -13,15 +13,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Web", "Mango.Web\Mang
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.Identity", "Mango.Services.Identity\Mango.Services.Identity.csproj", "{0BA74BB8-C408-4D7A-B6E1-6CC88197794E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ShoppingCartAPI", "Mango.Services.ShoppingCartAPI\Mango.Services.ShoppingCartAPI.csproj", "{9C2E5BC3-858F-42D5-AF6E-E2DC212CF7A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.ShoppingCartAPI", "Mango.Services.ShoppingCartAPI\Mango.Services.ShoppingCartAPI.csproj", "{9C2E5BC3-858F-42D5-AF6E-E2DC212CF7A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.CouponAPI", "Mango.Services.CouponAPI\Mango.Services.CouponAPI.csproj", "{100AD933-90D6-47DA-81E3-DC6CCAFC3113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", "Mango.Services.CouponAPI\Mango.Services.CouponAPI.csproj", "{100AD933-90D6-47DA-81E3-DC6CCAFC3113}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{DDBA79D3-C3E6-4D0C-AD29-C383CB7721C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.MessageBus", "Mango.MessageBus\Mango.MessageBus.csproj", "{46EC7411-D285-499D-A4EA-10C8A8E7BEC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.MessageBus", "Mango.MessageBus\Mango.MessageBus.csproj", "{46EC7411-D285-499D-A4EA-10C8A8E7BEC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.OrderAPI", "Mango.Services.OrderAPI\Mango.Services.OrderAPI.csproj", "{F2BA9B67-5AD0-497A-A665-A37880BD4648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.OrderAPI", "Mango.Services.OrderAPI\Mango.Services.OrderAPI.csproj", "{F2BA9B67-5AD0-497A-A665-A37880BD4648}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{83512041-75BF-489D-A5BA-3B8379778DF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentProcessor", "PaymentProcessor\PaymentProcessor.csproj", "{078F1A47-C2CD-491B-A980-6875004A5A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.PaymentAPI", "Mango.Services.PaymentAPI\Mango.Services.PaymentAPI.csproj", "{292E51A6-49ED-4C5B-A46D-D55CEB74EC5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,14 @@ Global
 		{F2BA9B67-5AD0-497A-A665-A37880BD4648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2BA9B67-5AD0-497A-A665-A37880BD4648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2BA9B67-5AD0-497A-A665-A37880BD4648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078F1A47-C2CD-491B-A980-6875004A5A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078F1A47-C2CD-491B-A980-6875004A5A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078F1A47-C2CD-491B-A980-6875004A5A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078F1A47-C2CD-491B-A980-6875004A5A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292E51A6-49ED-4C5B-A46D-D55CEB74EC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292E51A6-49ED-4C5B-A46D-D55CEB74EC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292E51A6-49ED-4C5B-A46D-D55CEB74EC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292E51A6-49ED-4C5B-A46D-D55CEB74EC5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +83,8 @@ Global
 		{100AD933-90D6-47DA-81E3-DC6CCAFC3113} = {583C418E-67EF-4C57-ABAA-1C27F74386FE}
 		{46EC7411-D285-499D-A4EA-10C8A8E7BEC2} = {DDBA79D3-C3E6-4D0C-AD29-C383CB7721C5}
 		{F2BA9B67-5AD0-497A-A665-A37880BD4648} = {583C418E-67EF-4C57-ABAA-1C27F74386FE}
+		{078F1A47-C2CD-491B-A980-6875004A5A2F} = {83512041-75BF-489D-A5BA-3B8379778DF0}
+		{292E51A6-49ED-4C5B-A46D-D55CEB74EC5C} = {583C418E-67EF-4C57-ABAA-1C27F74386FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CADDDD25-98D4-4EA6-AD32-02338A7A783D}
