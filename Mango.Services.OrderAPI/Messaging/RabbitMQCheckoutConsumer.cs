@@ -9,13 +9,13 @@ using RabbitMQ.Client.Events;
 
 namespace Mango.Services.OrderAPI.Messaging
 {
-    public class RabbitMQConsumer : BackgroundService
+    public class RabbitMQCheckoutConsumer : BackgroundService
     {
         private readonly OrderRepository _orderRepository;
         private readonly IMessageBus _msg;
         private IConnection _connection;
         private IModel _channel;
-        public RabbitMQConsumer(OrderRepository orderRepository, IMessageBus msg)
+        public RabbitMQCheckoutConsumer(OrderRepository orderRepository, IMessageBus msg)
         {
             _orderRepository = orderRepository;
             _msg = msg;

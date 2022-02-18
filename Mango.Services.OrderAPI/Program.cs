@@ -30,7 +30,7 @@ using Microsoft.OpenApi.Models;
 
     //Add RabbitMQConsumer
     //This will configure the service and automatically start it
-    builder.Services.AddHostedService<RabbitMQConsumer>();
+    builder.Services.AddHostedService<RabbitMQCheckoutConsumer>();
 
     //configure authentication, authorization and swagger services for Identity token
 
