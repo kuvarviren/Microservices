@@ -3,6 +3,7 @@ using Mango.MessageBus;
 using Mango.Services.OrderAPI;
 using Mango.Services.OrderAPI.DbContexts;
 using Mango.Services.OrderAPI.Messaging;
+using Mango.Services.OrderAPI.RabbitMQSender;
 using Mango.Services.OrderAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -27,6 +28,9 @@ using Microsoft.OpenApi.Models;
 
     //configure services to post message to message bus
     builder.Services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
+
+    //Add RabbitMQSender
+    builder.Services.AddSingleton<IRabbitMQOrderMessageSender, RabbitMQOrderMessageSender>();
 
     //Add RabbitMQConsumer
     //This will configure the service and automatically start it

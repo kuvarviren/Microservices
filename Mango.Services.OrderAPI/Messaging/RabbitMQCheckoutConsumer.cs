@@ -2,6 +2,7 @@
 using Mango.MessageBus;
 using Mango.Services.OrderAPI.Messages;
 using Mango.Services.OrderAPI.Models;
+using Mango.Services.OrderAPI.RabbitMQSender;
 using Mango.Services.OrderAPI.Repository;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
@@ -13,12 +14,15 @@ namespace Mango.Services.OrderAPI.Messaging
     {
         private readonly OrderRepository _orderRepository;
         private readonly IMessageBus _msg;
+        private readonly IRabbitMQOrderMessageSender _rabbitMQOrderMessageSender;
         private IConnection _connection;
         private IModel _channel;
-        public RabbitMQCheckoutConsumer(OrderRepository orderRepository, IMessageBus msg)
+        public RabbitMQCheckoutConsumer(OrderRepository orderRepository, IMessageBus msg,
+            IRabbitMQOrderMessageSender rabbitMQOrderMessageSender)
         {
             _orderRepository = orderRepository;
             _msg = msg;
+            _rabbitMQOrderMessageSender = rabbitMQOrderMessageSender;
             var factory = new ConnectionFactory
             {
                 UserName = "guest",
@@ -103,6 +107,7 @@ namespace Mango.Services.OrderAPI.Messaging
                 //await _msg.PublishMessage(paymentRequestMessage, orderPaymentProcessorTopic);
                 //delete the order message from the service
                 //await args.CompleteMessageAsync(args.Message);
+                _rabbitMQOrderMessageSender.SendMessage(paymentRequestMessage, "orderpaymentqueue");
             }
             catch (Exception ex)
             {
