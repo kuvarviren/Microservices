@@ -28,6 +28,10 @@ using Microsoft.OpenApi.Models;
     //configure services to post message to message bus
     builder.Services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
 
+    //Add RabbitMQConsumer
+    //This will configure the service and automatically start it
+    builder.Services.AddHostedService<RabbitMQConsumer>();
+
     //configure authentication, authorization and swagger services for Identity token
 
     builder.Services.AddAuthentication("Bearer")
